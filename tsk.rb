@@ -5,20 +5,20 @@
 class Tsk < Formula
   desc "A simple task runner with TOML configuration."
   homepage "https://github.com/notnmeyer/tsk"
-  version "0.7.0"
+  version "0.7.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.0/tsk_v0.7.0_Darwin_arm64.tar.gz"
-      sha256 "a4c3d2261ce05794b7cf60660681cebf2790b6b47c8f9e7bb52a6434ffc27cf7"
+      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.1/tsk_v0.7.1_Darwin_arm64.tar.gz"
+      sha256 "60195dd7801c5fd127dfe3df903b831cad53468641d131d47e66572966815813"
 
       def install
         bin.install "tsk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.0/tsk_v0.7.0_Darwin_x86_64.tar.gz"
-      sha256 "a4906035ffa0f511ec00032ba46afaf51157543248e7cc140a92374059c406b7"
+      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.1/tsk_v0.7.1_Darwin_x86_64.tar.gz"
+      sha256 "1a62496a459aff3921244a9535ecc317e7c0aa21e96cb4d26fc201bfe38d2b2d"
 
       def install
         bin.install "tsk"
@@ -28,24 +28,24 @@ class Tsk < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.0/tsk_v0.7.0_Linux_arm_6.tar.gz"
-      sha256 "e3eadabadd93ae2a46ffb078303951c15a52b2945c5a297ab94bf0e318b83926"
+      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.1/tsk_v0.7.1_Linux_arm_6.tar.gz"
+      sha256 "d8c174ef2ab1e6eeeb9ca85817094a0e7b6499a5d13270f75bfd9480697f8dd2"
 
       def install
         bin.install "tsk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.0/tsk_v0.7.0_Linux_arm64.tar.gz"
-      sha256 "1efdcece91d8ca1b092e956e0f9aa5bf3dfb72e8c9182236f3adbcbe70da5146"
+      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.1/tsk_v0.7.1_Linux_arm64.tar.gz"
+      sha256 "2eee17703cd9e583eb9d1e69809a65522079633d488d5805887cc5e74be50f32"
 
       def install
         bin.install "tsk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.0/tsk_v0.7.0_Linux_x86_64.tar.gz"
-      sha256 "a577240882a4f70bf92eca5072aa48fab04bda3ec19680fa5c337d960256cce2"
+      url "https://github.com/notnmeyer/tsk/releases/download/v0.7.1/tsk_v0.7.1_Linux_x86_64.tar.gz"
+      sha256 "6033b04f9196d0d04e0355563e1cf4bb90a90ffb87f11aaeb0465390b487fef7"
 
       def install
         bin.install "tsk"
